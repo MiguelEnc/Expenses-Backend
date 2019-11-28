@@ -1,10 +1,10 @@
 export default class Account {
-  readonly accountName: string;
-  readonly initialValue: number;
-  readonly currency: string;
+  constructor(
+    readonly name: string,
+    readonly initialValue: number,
+    readonly currency: string) {
 
-  constructor(name: string, initialValue: number, currency: string) {
-    this.accountName = name;
+    this.name = name;
     this.initialValue = initialValue;
     this.currency = currency;
   }

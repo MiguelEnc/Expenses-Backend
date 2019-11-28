@@ -1,24 +1,18 @@
 import User from "../authentication/User";
 import Category from "./Category";
+import Account from "./Account";
 
 export default class Transfer {
-  readonly accountFrom: string;
-  readonly accountTo: string;
-  readonly user: User;
-  description: string;
-  date: string;
-  time: string;
-  category: Category;
-
   constructor(
-    accountFom: string,
-    accountTo: string,
-    description: string,
-    date: string,
-    time: string,
-    category: Category,
-    user: User, ) {
-    this.accountFrom = accountFom;
+    readonly accountFrom: Account,
+    readonly accountTo: Account,
+    public description: string,
+    public date: string,
+    public time: string,
+    public category: Category,
+    readonly user: User, ) {
+
+    this.accountFrom = accountFrom;
     this.accountTo = accountTo;
     this.description = description;
     this.date = date;

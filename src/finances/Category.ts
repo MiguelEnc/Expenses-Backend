@@ -1,15 +1,10 @@
 export default class Category {
-
-  name: string;
-  color: string;
-  type: string;
-  parent?: Category;
-
   constructor(
-    name: string,
-    color: string,
-    type: string,
-    parent?: Category) {
+    public name: string,
+    public color: string,
+    public type: string,
+    public parent?: Category) {
+
     this.name = name;
     this.color = color;
     this.type = type;

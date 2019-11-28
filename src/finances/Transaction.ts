@@ -1,24 +1,17 @@
 import Category from './Category';
 import User from '../authentication/User';
+import Account from './Account';
 
 export default abstract class Transaction {
-
-  account: string;
-  amount: string;
-  description: string;
-  date: Date;
-  time: string;
-  category: Category;
-  readonly user: User;
-
   constructor(
-    account: string,
-    amount: string,
-    description: string,
-    date: Date,
-    time: string,
-    category: Category,
-    user: User) {
+    public account: Account,
+    public amount: number,
+    public description: string,
+    public date: Date,
+    public time: string,
+    public category: Category,
+    readonly user: User) {
+
     this.account = account;
     this.amount = amount;
     this.description = description;

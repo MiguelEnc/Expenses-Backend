@@ -1,9 +1,5 @@
 export default class User {
-
-  readonly id: string;
-  readonly name: string;
-
-  constructor(id: string, name: string) {
+  constructor(readonly id: string, readonly name: string) {
     this.id = id;
     this.name = name;
   }
