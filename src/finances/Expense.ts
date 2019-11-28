@@ -2,7 +2,7 @@ import Category from './Category';
 import Transaction from './Transaction';
 import User from '../authentication/User';
 
-export class Expense extends Transaction {
+export default class Expense extends Transaction {
 
   constructor(
     account: string,

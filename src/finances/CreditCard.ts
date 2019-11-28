@@ -1,4 +1,4 @@
-class CreditCard {
+export default class CreditCard {
 
   readonly expiration: string;
   readonly cutDate: string;

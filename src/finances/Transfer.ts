@@ -1,7 +1,7 @@
 import User from "../authentication/User";
 import Category from "./Category";
 
-class Transfer {
+export default class Transfer {
   readonly accountFrom: string;
   readonly accountTo: string;
   readonly user: User;

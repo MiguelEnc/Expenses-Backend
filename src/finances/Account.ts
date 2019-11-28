@@ -1,4 +1,4 @@
-class Account {
+export default class Account {
   readonly accountName: string;
   readonly initialValue: number;
   readonly currency: string;
